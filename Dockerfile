@@ -27,7 +27,7 @@ ENV NEXT_TELEMETRY_DISABLED 1
 
 # Copy from build
 COPY --from=build-env /app/next.config.mjs ./
-COPY --from=build-env /app/.env ./
+#COPY --from=build-env /app/.env ./
 COPY --from=build-env /app/public ./public
 COPY --from=build-env /app/.next ./.next
 COPY --from=build-env /app/node_modules ./node_modules
